@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TransService} from '../service/trans.service';
 
 @Component({
   selector: 'app-interets',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InteretsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public translate: TransService) { }
 
   ngOnInit(): void {
   }

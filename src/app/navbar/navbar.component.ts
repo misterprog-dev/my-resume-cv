@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {DownloadService} from '../service/download.service';
+import {TranslateService} from '@ngx-translate/core';
+import {TransService} from '../service/trans.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,13 +10,12 @@ import {DownloadService} from '../service/download.service';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private downloadService: DownloadService) { }
+  constructor(public downloadService: DownloadService, public translate: TransService) { }
 
   ngOnInit(): void {
   }
 
-  downloadPdf(url: string, file: string) {
-    this.downloadService.downloadPdf(url, file);
+  switchLang(lang: string) {
+    this.translate.translate.use(lang);
   }
-
 }

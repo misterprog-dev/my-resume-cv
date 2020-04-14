@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-declare var require: any
+declare var require: any;
 const FileSaver = require('file-saver');
 
 @Injectable({
