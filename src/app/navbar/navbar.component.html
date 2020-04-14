@@ -11,31 +11,31 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#about">{{'h1' | translate}}</a>
+        <a class="nav-link js-scroll-trigger" href="#about">Qui suis-je ?<!--{{'h1' | translate}}--></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#competences">{{'h2' | translate}}</a>
+        <a class="nav-link js-scroll-trigger" href="#competences">Compétences<!--{{'h2' | translate}}--></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#experiences">{{'h3' | translate}}</a>
+        <a class="nav-link js-scroll-trigger" href="#experiences">Expériences<!--{{'h3' | translate}}--></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#certifications">{{'h4' | translate}}</a>
+        <a class="nav-link js-scroll-trigger" href="#certifications">Certifications<!--{{'h4' | translate}}--></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#formations">{{'h5' | translate}}</a>
+        <a class="nav-link js-scroll-trigger" href="#formations">Formations<!--{{'h5' | translate}}--></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#langues">{{'h6' | translate}}</a>
+        <a class="nav-link js-scroll-trigger" href="#langues">Langues<!--{{'h6' | translate}}--></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#interets">{{'h7' | translate}}</a>
+        <a class="nav-link js-scroll-trigger" href="#interets">Intérêts<!--{{'h7' | translate}}--></a>
       </li>
     </ul>
   </div>
 
   <span class="form-inline">
-    <select
+    <!--<select
       style="width: 65px"
       class="form-control"
       #selectedLang
@@ -45,8 +45,8 @@
                 [selected]="language === translate.translate.currentLang">
           {{ language }}
         </option>
-    </select>
-    <i class="fas fa-download" style="cursor: pointer;color: white;font-weight: bold; margin-left: 10px;"
+    </select>margin-left: 10px;-->
+    <i class="fas fa-download" style="cursor: pointer;color: white;font-weight: bold;"
        (click)="downloadService.downloadPdf('assets/file/fr_CV_DIAKITE.pdf','CV DIAKITE')">Fr</i>
     <i class="fas fa-download" style="cursor: pointer;margin-left: 10px;color: white;font-weight: bold; margin-left: 10px;"
        (click)="downloadService.downloadPdf('assets/file/en_CV_DIAKITE.pdf','CV DIAKITE')"> En</i>
